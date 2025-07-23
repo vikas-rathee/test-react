@@ -21,7 +21,7 @@ const MyDialog = ({
   cancelText,
 }: MyDialogPropsType) => {
   return (
-    <Dialog open={open} maxWidth="xl" fullWidth>
+    <Dialog open={open} maxWidth="lg" fullWidth sx={{ height: "90vh" }}>
       <DialogTitle>{title}</DialogTitle>
       {content}
       <DialogActions>

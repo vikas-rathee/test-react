@@ -1,6 +1,7 @@
 import CodeMirrorEditorTest from "./EditorIntegration/CodeMirrorEditor/CodeMirrorEditorTest";
 import CodeMirrorWithJsonCParser from "./EditorIntegration/CodeMirrorEditor/CodeMirrorWithJsonCParser";
 import CodeMirrorWithLinter from "./EditorIntegration/CodeMirrorEditor/CodeMirrorWithLinter";
+import EditorWithTable from "./EditorIntegration/EditorWithTable/EditorWithTable";
 import MonacoEditorTest from "./EditorIntegration/MonacoEditor/MonacoEditorTest";
 import AsyncValidationAndSubmission from "./RHF/AsyncValidationAndSubmission/AsyncValidationAndSubmission";
 import FoodDeliveryForm from "./RHF/FoodDeliveryForm";
@@ -101,6 +102,10 @@ const routes = [
           {
             path: "code-mirror-jsonc",
             element: <CodeMirrorWithJsonCParser />,
+          },
+          {
+            path: "with-table",
+            element: <EditorWithTable />,
           },
         ],
       },

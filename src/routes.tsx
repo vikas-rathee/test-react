@@ -1,11 +1,12 @@
 import CodeMirrorEditorTest from "./EditorIntegration/CodeMirrorEditor/CodeMirrorEditorTest";
 import CodeMirrorWithJsonCParser from "./EditorIntegration/CodeMirrorEditor/CodeMirrorWithJsonCParser";
 import CodeMirrorWithLinter from "./EditorIntegration/CodeMirrorEditor/CodeMirrorWithLinter";
+import CodeMirrorMergeTest from "./EditorIntegration/CodeMirrorMerge/CodeMirrorMergeTest";
 import EditorWithTable from "./EditorIntegration/EditorWithTable/EditorWithTable";
+import JsonDiffKit from "./EditorIntegration/JsonDiffKit/JsonDiffKit";
 import MonacoEditorTest from "./EditorIntegration/MonacoEditor/MonacoEditorTest";
 import AsyncValidationAndSubmission from "./RHF/AsyncValidationAndSubmission/AsyncValidationAndSubmission";
 import FoodDeliveryForm from "./RHF/FoodDeliveryForm";
-import GetFieldStateChild from "./RHF/GetFieldStateSubscription/GetFieldStateChild";
 import GetFieldStateParent from "./RHF/GetFieldStateSubscription/GetFieldStateParent";
 import TestDefaultValueAfterReRender from "./RHF/TestDefaultValueAfterReRender";
 import UseFormStateParent from "./RHF/TestFullFormStateWithUseFormState/UseFormStateParent";
@@ -17,6 +18,7 @@ import FoodDeliverFormWithReusableControls from "./RHF/WithReusableControls/page
 import ReRenderInputWithoutHooks from "./TestReRendering/ReRenderInputWithoutHooks";
 import ReRenderInputWithUseRef from "./TestReRendering/ReRenderInputWithUseRef";
 import ReRenderInputWithUseState from "./TestReRendering/ReRenderInputWithUseState";
+import ReactDiffViewTest from "./EditorIntegration/ReactDiffView/ReactDiffViewTest";
 
 const routes = [
   {
@@ -106,6 +108,18 @@ const routes = [
           {
             path: "with-table",
             element: <EditorWithTable />,
+          },
+          {
+            path: "code-mirror-merge",
+            element: <CodeMirrorMergeTest />,
+          },
+          {
+            path: "json-diff-kit",
+            element: <JsonDiffKit />,
+          },
+          {
+            path: "react-diff-view",
+            element: <ReactDiffViewTest />,
           },
         ],
       },

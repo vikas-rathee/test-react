@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 
+// Should we use <optgroup> for Group names ??
+
 // Grouped sample data
 const sampleOptions = [
   {
